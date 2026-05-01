@@ -23,7 +23,7 @@ def run_agent(llm, user_query: str):
             a, b = int(numbers[0]), int(numbers[1])
             return add(a, b)
         else:
-            return "Please provide two numbers to"
+            return "Please provide two numbers to add."
     
     # First, ask the LLM if it needs to search Wikip
     decide_prompt = f'You are a helpful assistant. The user asked: "{user_query}"\n\nDo you need to search Wikipedia to answer this question? Answer with ONLY "YES" or "NO".'
